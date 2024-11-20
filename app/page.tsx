@@ -1,12 +1,7 @@
 import React from "react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
+import Navbar from "@/components/navbar/Navbar";
 export default function page() {
-  return (
-    <div>
-      <h1>THis is homepage</h1>
-      <Button variant="outline" size="sm">
-        hello
-      </Button>
-    </div>
-  );
+  return <h1>I M HOMEPAGE</h1>;
 }
