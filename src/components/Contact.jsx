@@ -33,7 +33,7 @@ export default function Contact() {
             officialsumitpandey@gmail.com
           </p>
           <a
-            href="mailto:example@example.com"
+            href="mailto:officialsumitpandey@gmail.com"
             className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
           >
             Send Email
@@ -52,7 +52,7 @@ export default function Contact() {
           <h2 className="text-2xl font-semibold text-green-400">Phone</h2>
           <p className="text-lg text-neutral-200"> +91 8076608801</p>
           <a
-            href="tel:+1234567890"
+            href="tel:8076608801"
             className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
           >
             Call Now

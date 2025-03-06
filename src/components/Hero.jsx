@@ -2,21 +2,22 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profile from "../assets/profile.jpg";
-
+import { Element } from "react-scroll";
+import resume from "../assets/resume.pdf";
 export default function Hero() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-center min-h-screen bg-black text-white px-12 py-16">
-      {/* Background Gradient */}
+    <Element
+      name="home"
+      className="relative flex flex-col md:flex-row items-center justify-center min-h-screen bg-black text-white px-12 py-16"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-70"></div>
 
-      {/* Left Side Content */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="z-10 text-center md:text-left md:w-1/2"
       >
-        {/* Heading */}
         <motion.h1
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
@@ -26,7 +27,6 @@ export default function Hero() {
           Hi, I'm <span className="text-blue-400">Sumit Kumar Pandey</span>
         </motion.h1>
 
-        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -37,9 +37,8 @@ export default function Hero() {
           <span className="text-green-400">Full Stack Developer</span>
         </motion.p>
 
-        {/* Download Resume Button */}
         <motion.a
-          href="resume.pdf"
+          href={resume}
           download
           className="mt-6 inline-block bg-blue-500 px-8 py-4 text-2xl rounded-lg text-white font-semibold hover:bg-blue-600 transition"
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +48,6 @@ export default function Hero() {
           Download Resume
         </motion.a>
 
-        {/* Social Media Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -71,7 +69,6 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* Right Side Image */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -85,6 +82,6 @@ export default function Hero() {
           whileHover={{ scale: 1.05 }}
         />
       </motion.div>
-    </section>
+    </Element>
   );
 }
