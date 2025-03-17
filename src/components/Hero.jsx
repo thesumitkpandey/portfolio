@@ -38,8 +38,8 @@ export default function Hero() {
         </motion.p>
 
         <motion.a
-          href={resume}
-          download
+          href="/Sumit.pdf"
+          download="Sumit.pdf"
           className="mt-6 inline-block bg-blue-500 px-8 py-4 text-2xl rounded-lg text-white font-semibold hover:bg-blue-600 transition"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
