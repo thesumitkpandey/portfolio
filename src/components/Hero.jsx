@@ -33,12 +33,12 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-2xl text-gray-300 mb-6"
         >
-          A Passionate{" "}
+          A Passionate
           <span className="text-green-400">Full Stack Developer</span>
         </motion.p>
 
         <motion.a
-          href="/Sumit.pdf"
+          href="https://raw.githubusercontent.com/thesumitkpandey/thesumitkpandey/main/Sumit_Resume.pdf"
           download="Sumit.pdf"
           className="mt-6 inline-block bg-blue-500 px-8 py-4 text-2xl rounded-lg text-white font-semibold hover:bg-blue-600 transition"
           initial={{ opacity: 0, y: 20 }}
